@@ -1,9 +1,11 @@
-div{
-    padding: 20px;
-}
 table{
    background-color: #777777;
    padding: 2px;
+}
+form { 
+    margin-left: 25%;
+    margin-right:25%;
+    width: 50%;
 }
 .botoes{
     background-color: #ecd469;
@@ -21,4 +23,11 @@ table{
     border: 1;
     font-size: 25px;
     font-size: bold;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center {
+	text-align: center;
 }
