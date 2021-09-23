@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" type="image/png" href="./img/calculadora.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/estilo_calculadora.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Primeiro site</title>
+</head>
+<body>
+    <div class="navbar">
+        <header class="d-flex flex-wrap justify-content-center py-3">
+            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="./imgs/marvel_logo.png" width="100" height="45">
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="navbar-item" aria-current="page" class="test">Personagens</a></li>
+                <li class="nav-item"><a href="#" class="navbar-item-active">Outros</a></li>
+            </ul>
+        </header>
+    </div>
+
+        <div>
+            <h2 class="text-center">Calculadora</h2>
+            <form name="meu_form">
+                <table class="center">
+                    <tr>
+                        <td colspan="4"><input type="text" name="minha_tela" readonly class="tela"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" C " onclick="limpar()" class="botoes"></td>
+                        <td><input type="button" value=" del " onclick="deletar()" class="botoes"></td>
+                        <td><input type="button" value=" - " onclick="inserir(' - ')" class="botoes"></td>
+                        <td><input type="button" value=" + " onclick="inserir(' + ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 1 " onclick="inserir(1)" class="botoes"></td>
+                        <td><input type="button" value=" 2 " onclick="inserir(2)" class="botoes"></td>
+                        <td><input type="button" value=" 3 " onclick="inserir(3)" class="botoes"></td>
+                        <td><input type="button" value=" / " onclick="inserir(' / ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 4 " onclick="inserir(4)" class="botoes"></td>
+                        <td><input type="button" value=" 5 " onclick="inserir(5)" class="botoes"></td>
+                        <td><input type="button" value=" 6 " onclick="inserir(6)" class="botoes"></td>
+                        <td><input type="button" value=" * " onclick="inserir(' * ')" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" 7 " onclick="inserir(7)" class="botoes"></td>
+                        <td><input type="button" value=" 8 " onclick="inserir(8)" class="botoes"></td>
+                        <td><input type="button" value=" 9 " onclick="inserir(9)" class="botoes"></td>
+                        <td><input type="button" value=" = " onclick="total()" class="botoes"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value=" . " onclick="inserir('.') "class="botoes"></td>
+                        <td><input type="button" value=" 0 " onclick="inserir(0)" class="botoes"></td>
+                    </tr>
+                </table>
+           </form>
+        </div>
+    <script type="text/javascript" src="./js/funcionalidades_calculadora.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
