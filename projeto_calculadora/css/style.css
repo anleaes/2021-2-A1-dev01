@@ -80,3 +80,8 @@ form {
     font-weight: bold;
     margin-bottom: 0rem;
 }
+
+.card-image { 
+    object-fit: cover;
+    border-radius: 3px 3px 0px 0px;
+}
