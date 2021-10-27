@@ -1,3 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+
+<!-- Codigo html especifico desse arquivo -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,26 +16,11 @@
     <link rel="sortcut icon" type="image/png" href="./img/calculadora.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
     <title>Marvel</title>
 </head>
 <body>
-    <div class="navbar">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="./imgs/marvel_logo.png" width="100" height="45">
-            </a>
-
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="index.html" class="navbar-item" aria-current="page" class="test">Home</a></li>
-              <li class="nav-item"><a href="pagFilmes.html" class="navbar-item" aria-current="page" class="test">Filmes</a></li>
-              <li class="nav-item"><a href="pagPersonagens.html" class="navbar-item-active" aria-current="page" class="test">Personagens</a></li>
-              <li class="nav-item"><a href="calculadora.html" class="navbar-item">Outros</a></li>
-            </ul>
-        </header>
-    </div>
-
     <div class="album py-5 bg-light">
     <div class="container">
 
@@ -34,13 +28,13 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./images/spiderman2.jpg" width="100%" height="225" class="card-image">
+            <img src="/static/img/spiderman2.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">SPIDER-MAN (PETER PARKER)</p>
               <p class="card-text">With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <a href="characters/spiderman.html"><button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button></a>
+                <a href="spiderman.html"><button type="button" class="btn btn-sm btn-outline-secondary">Detalhes</button></a>
               </div>
             </div>
           </div>
@@ -48,7 +42,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-           <img src="./images/captainAmerica.jpg" width="100%" height="225" class="card-image">
+           <img src="/static/img/captainAmerica.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">CAPTAIN AMERICA</p>
@@ -62,7 +56,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./images/ironMan.jpg" width="100%" height="225" class="card-image">
+            <img src="/static/img/ironMan.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">IRON MAN</p>
@@ -76,7 +70,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./images/wanda.jpg" width="100%" height="225" class="card-image">
+            <img src="/static/img/wanda.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">WANDA MAXIMOFF</p>
@@ -90,7 +84,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./images/wolverine.jpg" width="100%" height="225" class="card-image">
+            <img src="/static/img/wolverine.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">WOLVERINE</p>
@@ -104,7 +98,7 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img src="./images/blackWidow.jpg" width="100%" height="225" class="card-image">
+            <img src="/static/img/blackWidow.jpg" width="100%" height="225" class="card-image">
 
             <div class="card-body">
               <p class="card-title-text">BLACK WIDOW</p>
@@ -124,3 +118,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 </html>
+
+{% endblock body %}

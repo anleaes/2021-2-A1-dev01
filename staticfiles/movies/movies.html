@@ -1,3 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,15 +17,15 @@
     <link rel="sortcut icon" type="image/png" href="./img/calculadora.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/features.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/features.css"> 
         <!-- Custom styles for this template -->
-    <link href="./css/footers.css" rel="stylesheet">
+    <link href="../css/footers.css" rel="stylesheet">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -37,34 +47,18 @@
     <title>Marvel</title>
 </head>
 <body>
-    <div class="navbar">
-        <header class="d-flex flex-wrap justify-content-center py-3">
-            <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <img src="./imgs/marvel_logo.png" width="100" height="45">
-            </a>
-
-            <ul class="nav nav-pills">
-              <li class="nav-item"><a href="index.html" class="navbar-item" aria-current="page" class="test">Home</a></li>
-              <li class="nav-item"><a href="pagFilmes.html" class="navbar-item-active" aria-current="page" class="test">Filmes</a></li>
-              <li class="nav-item"><a href="pagPersonagens.html" class="navbar-item" aria-current="page" class="test">Personagens</a></li>
-              <li class="nav-item"><a href="calculadora.html" class="navbar-item">Outros</a></li>
-            </ul>
-        </header>
-    </div>
-
-
     <div class="container px-4 py-5" id="custom-cards">
       
       <div class="row row-cols-2 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeViuvaNegra.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeViuvaNegra.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"  style="visibility: hidden">Much longer title that wraps to multiple lines</h2>
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeViuvaNegra.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeViuvaNegra.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -72,12 +66,12 @@
         </div>
   
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeHomemAranha.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeHomemAranha.jpg');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeHomemAranha.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeHomemAranha.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -85,11 +79,11 @@
         </div>
         
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeDoutorEstranho.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeDoutorEstranho.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeDoutorEstranho.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeDoutorEstranho.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -99,11 +93,11 @@
 
       <div class="row row-cols-2 row-cols-lg-3 align-items-stretch g-4 py-5">
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeCapitaMarvel.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeCapitaMarvel.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeCapitaMarvel.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeCapitaMarvel.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -111,14 +105,14 @@
         </div>
   
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeVingadoresUlt.jpeg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeVingadoresUlt.jpeg');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"  style="visibility: hidden">Much longer title that wraps to multiple lines</h2>
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeVingadoresUlt.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeVingadoresUlt.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -126,45 +120,25 @@
         </div>
   
         <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./imgs/filmeThor.jpg');">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeThor.jpg');">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="./imgs/filmeThor.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="../img/filmeThor.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
 
-    <div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <p class="col-md-4 mb-0 text-muted">&copy; 2021 Company, Inc</p>
-
-    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-    </a>
-
-    <ul class="nav col-md-4 justify-content-end">
-      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="pagFilmes.html" class="nav-link px-2 text-muted">Filmes</a></li>
-      <li class="nav-item"><a href="pagPersonagens.html" class="nav-link px-2 text-muted">Personagens</a></li>
-      <li class="nav-item"><a href="calculadora.html" class="nav-link px-2 text-muted">Outros</a></li>
-
-    </ul>
-  </footer>
-</div>
-
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 
   </body>
 </html>
+
+{% endblock body %}
