@@ -21,11 +21,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('core/', include('core.urls', namespace='core')),
-    path('characters/', views.characters, name='characters'),
-    path('spiderman/', views.spiderman, name='spiderman'),
-    path('movies/', views.movies, name='movies'),
+    path('', include('core.urls', namespace='core')),
+    path('characters/', include('characters.urls', namespace='characters')),
+    path('movies/', include('movies.urls', namespace='movies')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
