@@ -22,9 +22,9 @@
           </a>
 
           <ul class="nav nav-pills">
-            <li class="nav-item"><a href="" class="navbar-item-active" aria-current="page" class="test">Home</a></li>
-            <li class="nav-item"><a href="{% static 'movies/movies.html' %}" class="navbar-item" aria-current="page" class="test">Filmes</a></li>
-            <li class="nav-item"><a href="{% static 'characters/characters.html' %}" class="navbar-item" aria-current="page" class="test">Personagens</a></li>
+            <li class="nav-item"><a href="{% url 'core:home' %}" class="navbar-item-active" aria-current="page" class="test">Home</a></li>
+            <li class="nav-item"><a href="{% url 'movies:movies' %}" class="navbar-item" aria-current="page" class="test">Filmes</a></li>
+            <li class="nav-item"><a href="{% url 'characters:characters' %}" class="navbar-item" aria-current="page" class="test">Personagens</a></li>
           </ul>
       </header>  
     </div>
@@ -42,9 +42,9 @@
       </a>
   
       <ul class="nav col-md-4 justify-content-end">
-        <li class="nav-item"><a href="" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="{% static 'movies/movies.html' %}" class="nav-link px-2 text-muted">Filmes</a></li>
-        <li class="nav-item"><a href="{% static 'characters/characters.html' %}" class="nav-link px-2 text-muted">Personagens</a></li>
+        <li class="nav-item"><a href="{% url 'core:home' %}" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="{% url 'movies:movies' %}" class="nav-link px-2 text-muted">Filmes</a></li>
+        <li class="nav-item"><a href="{% url 'characters:characters' %}" class="nav-link px-2 text-muted">Personagens</a></li>
   
       </ul>
     </footer>
