@@ -17,15 +17,14 @@
     <link rel="sortcut icon" type="image/png" href="./img/calculadora.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/features.css"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <!-- Custom styles for this template -->
-    <link href="../css/footers.css" rel="stylesheet">
-
+    <link href="{% static 'css/footers.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/features.css' %}">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/features/">
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
 
     <style>
       .bd-placeholder-img {
@@ -58,20 +57,22 @@
               <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeViuvaNegra.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <a href="{% url 'movies:black_widow_movie' %}">
+                  <img src="{% static 'img/filmeViuvaNegra.jpg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-  
+
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/static/img/filmeHomemAranha.jpg');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeHomemAranha.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="{% static 'img/filmeHomemAranha.jpg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -83,7 +84,7 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeDoutorEstranho.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="{% static 'img/filmeDoutorEstranho.jpg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -97,7 +98,7 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeCapitaMarvel.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="{% static 'img/filmeCapitaMarvel.jpg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -112,7 +113,7 @@
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeVingadoresUlt.jpeg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="{% static 'img/filmeVingadoresUlt.jpeg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
@@ -124,7 +125,7 @@
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
-                  <img src="../img/filmeThor.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                  <img src="{% static 'img/filmeThor.jpg' %}" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
                 </li>
               </ul>
             </div>
