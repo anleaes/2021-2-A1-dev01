@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('core.urls', namespace='core')),
     path('characters/', include('characters.urls', namespace='characters')),
     path('movies/', include('movies.urls', namespace='movies')),
+    path('black_widow_movie/', include('movies.urls', namespace='black_widow_movie')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ block.super }}
+{% endblock title %}
+
+{% block body %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <title>Marvel</title>
+</head>
+<body>
+        <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        background-size: cover;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <div class="container">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">Description</h1>
+              <p class="col-md-8 fs-4">Black Widow is a 2021 American superhero film based on Marvel Comics featuring the character of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 24th film in the Marvel Cinematic Universe (MCU). The film was directed by Cate Shortland from a screenplay by Eric Pearson, and stars Scarlett Johansson as Natasha Romanoff / Black Widow alongside Florence Pugh, David Harbour, O-T Fagbenle, Olga Kurylenko, William Hurt, Ray Winstone, and Rachel Weisz. Set after the events of Captain America: Civil War (2016), the film sees Romanoff on the run and forced to confront her past.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="display-5 fw-bold">Characters that appear in the movie</h1>
+    <div class="row">
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/blackWidow.jpg' %}" height="140" width="140"/></svg>
+          <h2>Black Widow</h2>
+          <p><a class="btn btn-secondary" href="{% url 'characters:characters' %}">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/spiderman2.jpg' %}" height="140" width="140"/></svg>
+          <h2>Spiderman</h2>
+          <p><a class="btn btn-secondary" href="{% url 'characters:spiderman' %}">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/captainAmerica.jpg' %}" height="140" width="140"/></svg>
+            <h2>Captain America</h2>
+            <p><a class="btn btn-secondary" href="{% url 'characters:characters' %}">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/ironMan.jpg' %}" height="140" width="140"/></svg>
+            <h2>Iron Man</h2>
+            <p><a class="btn btn-secondary" href="{% url 'characters:characters' %}">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+          <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/wanda.jpg' %}" height="140" width="140"/></svg>
+          <h2>Wanda</h2>
+          <p><a class="btn btn-secondary" href="{% url 'characters:characters' %}">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#ffffff"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text><image href="{% static 'img/wolverine.jpg' %}" height="140" width="140"/></svg>
+            <h2>Wolverine</h2>
+            <p><a class="btn btn-secondary" href="{% url 'characters:characters' %}">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+
+      </div><!-- /.row -->
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
+</html>
+
+{% endblock body %}

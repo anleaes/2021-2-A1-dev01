@@ -20,3 +20,9 @@ def movies(request):
     template_name ='marvelapp/movies/movies.html'
     context = {}
     return render(request, template_name, context)
+
+def black_widow_movie(request):
+    template_name ='marvelapp/movies/black_widow_movie.html'
+    context = {}
+    return render(request, template_name, context)
+
